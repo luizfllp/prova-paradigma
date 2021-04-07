@@ -4,7 +4,7 @@ namespace prova_paradigma.Entities
 {
     public class BTree
     {
-        private Node Root { get; set; }
+        public Node Root { get; private set; }
         public void Add(string parent, string child)
         {
             if (parent == null || child == null) return;
@@ -15,15 +15,16 @@ namespace prova_paradigma.Entities
             if (parentNode == null)
             {
                 Root = new Node(parent) {Left = new Node(child)};
+                return;
             }
 
-            if (parentNode!.Left != null)
+            if (parentNode!.Left == null)
             {
                 parentNode.Left = new Node(child);
                 return;
             }
 
-            if (parentNode!.Right != null)
+            if (parentNode!.Right == null)
             {
                 parentNode.Right = new Node(child);
                 return;
