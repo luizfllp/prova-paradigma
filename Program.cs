@@ -18,8 +18,7 @@ namespace prova_paradigma
                 tree.Add(node.Item1,node.Item2);
             }
 
-            Console.WriteLine(TreePrinter.MaxDepth(tree.Root.Right));
-
+            TreePrinter.PrintTree(tree.Root);
         }
 
     }
