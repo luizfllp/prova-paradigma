@@ -21,15 +21,15 @@ namespace prova_paradigma
 
                 TreePrinter.PrintTree(tree.Root, 2, 10);
             }
-            catch (Exceptions.MoreThanTwoChildException ex) { Logger.ToConsole(ex.Message); }
-            catch (Exceptions.MultipleRootsException ex) { Logger.ToConsole(ex.Message); }
-            catch (Exceptions.PresentCycleException ex) { Logger.ToConsole(ex.Message); }
-            catch (System.Exception) { Logger.ToConsole("E4"); }
+            catch (Exceptions.MoreThanTwoChildException ex) { Logger.ExceptionToConsole(ex.Message); }
+            catch (Exceptions.MultipleRootsException ex) { Logger.ExceptionToConsole(ex.Message); }
+            catch (Exceptions.PresentCycleException ex) { Logger.ExceptionToConsole(ex.Message); }
+            catch (System.Exception) { Logger.ExceptionToConsole("E4"); }
         }
 
         private static (string, string)[] MockPrinter()
         {
-            return new (string, String)[] { ("A", "B"), ("A", "C"), ("B", "G"), ("C", "H"), ("E", "F"), ("B", "D"), ("C", "E") };
+            return new (string, String)[] { ("A", "B"), ("A", "C"), ("B", "G"), ("C", "H"), ("H", "A"), ("E", "F"), ("B", "D"), ("C", "E") };
         }
 
         private static (string, string)[] OrderByParents((string, string)[] array)
