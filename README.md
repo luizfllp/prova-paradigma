@@ -1,7 +1,8 @@
 # prova-paradigma
 
 para executar o projeto 
-
+pré-requisitos:
+  * .Net Core 5.0
 faça o clone do projeto
 e execute
 
