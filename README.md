@@ -1,9 +1,10 @@
 # prova-paradigma
 
-para executar o projeto 
-pré-requisitos:
+
+pré-requisitos para executar o projeto:
   * .Net Core 5.0
-faça o clone do projeto
+
+Clone o projeto
 e execute
 
 ```bash
