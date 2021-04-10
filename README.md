@@ -5,7 +5,7 @@ pré-requisitos para executar o projeto:
   * .Net Core 5.0
 
 Clone o projeto
-e execute
+e execute no seu terminal
 
 ```bash
 dotnet build
