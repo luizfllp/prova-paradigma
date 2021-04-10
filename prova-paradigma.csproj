@@ -6,4 +6,8 @@
     <RootNamespace>prova_paradigma</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="Enums" />
+  </ItemGroup>
+
 </Project>
